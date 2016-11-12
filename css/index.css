@@ -1,0 +1,10 @@
+.footer {
+	height: 300px;
+	width: 100%;
+	background-color: gray;
+}
+.logo {
+	height: 50px;
+	width: 50px;
+	float: left;
+}
