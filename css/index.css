@@ -8,3 +8,7 @@
 	width: 50px;
 	float: left;
 }
+table {
+	color: darkgreen;
+	border-color: green;
+}
