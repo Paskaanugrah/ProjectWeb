@@ -1,14 +1,48 @@
+h1 {
+	font-family: Broadway;
+}
+h1.title {
+	font-family: Bernard MT Condensed;
+	font-size: 40px;
+}
 .footer {
 	height: 300px;
 	width: 100%;
 	background-color: gray;
 }
 .logo {
-	height: 50px;
-	width: 50px;
+	height: 60px;
+	width: 60px;
 	float: left;
 }
 table {
 	color: darkgreen;
 	border-color: green;
+}
+
+.namamobil {
+	font-size: 20px;
+	background-color: gray;
+	color: white;
+	font-family: Franklin Gothic Book;
+	cursor: pointer;
+}
+.hargasewa:hover {
+	background-color: lime;
+	color: white;
+	cursor: pointer;
+}
+.namamobil:hover {
+	background-color: lime;
+	color: white;
+}
+.gambarmobil {
+	border-radius: 100%;
+	cursor: pointer;
+}
+.gambarmobil:hover {
+	border-radius: 0px;
+}
+h3 {
+	font-family: lucida handwriting;
 }
