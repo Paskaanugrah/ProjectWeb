@@ -1,3 +1,6 @@
+body {
+	
+}
 h1 {
 	font-family: Broadway;
 }
@@ -28,12 +31,12 @@ table {
 	cursor: pointer;
 }
 .hargasewa:hover {
-	background-color: lime;
+	background-color: Forestgreen;
 	color: white;
 	cursor: pointer;
 }
 .namamobil:hover {
-	background-color: lime;
+	background-color: Forestgreen;
 	color: white;
 }
 .gambarmobil {
@@ -50,4 +53,10 @@ h3 {
 	text-align: left;
 	font-size: 15px;
 	font-family: century gothic;
+}
+p {
+	font-size: 20px;
+}
+p.profil {
+	font-size: 17px;
 }
