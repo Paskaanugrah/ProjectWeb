@@ -25,19 +25,41 @@
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="#">Home</a></li>
-      <li><a href="#mobil"">Mobil</a></li>
-      <li><a href="#">Page 2</a></li>
-      <li><a href="#">Page 3</a></li>
+      <li><a href="#profil">Profil</a></li>
+      <li><a href="#mobil">Mobil</a></li>
+      <li><a href="#keistimewaan">Keistimewaan</a></li>
+	  <li><a href="#informasi">Informasi</a></li>
     </ul>
   </div>
 </nav>
 
-<div class="jumbotron text-center">
-  <h1>Sakti Transport</h1>
-  <p>Resize this responsive page to see the effect!</p> 
+<div class="w3-content w3-section" style="max-width:100%">
+  
+
+  <img class="mySlides w3-animate-fading" src="images/slide/gambar1.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="images/slide/gambar2.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="images/slide/gambar3.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="images/slide/gambar4.jpg" style="width:100%">
 </div>
 
-<div class="container-fluid">
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000);    
+}
+</script>
+
+<div class="container-fluid" id="profil">
 	<center><h1>Profil Perusahaan</h1><center>
   <div class="row">
     <div class="col-sm-4">
@@ -45,7 +67,7 @@
     </div>
     <div class="col-sm-8">
       <h1>PT. Sakti Transport</h1>
-			<p>Sakti Transport adalah penyedia jasa sewa mobil / rental mobil di Jogja  yang meliputi penyewaan harian, tour paket wisata, antar jemput bandara, jasa pindahan dan ekspedisi darat. 
+			<p class="profil">Sakti Transport adalah penyedia jasa sewa mobil / rental mobil di Jogja  yang meliputi penyewaan harian, tour paket wisata, antar jemput bandara, jasa pindahan dan ekspedisi darat. 
 			Kami siap memberikan pelayanan istimewa untuk kebutuhan transportasi anda, apapun layanan yang anda butuhkan seperti sewa mobil lepas kunci atau dengan supir, rental mobil tujuan dalam / luar kota, untuk wisata, event, pernikahan, mudik lebaran, wisuda, angkutan pindahan, pengiriman barang dan berbagai kebutuhan transportasi lainnya.
 			Kepuasan pelanggan adalah hal yang terus kami jaga dan pertahankan dengan memberikan pelayanan yang profesional mulai dari aspek pelayanan pelanggan, perawatan & inspeksi rutin kendaraan hingga standard untuk supir ketika melayani pelanggan.</p>
     </div>
@@ -237,7 +259,7 @@
     </div>
 </div>
 <br>
-    <div class="container-fluid" id="mobil">
+    <div class="container-fluid">
   <div class="row">
     <div class="col-sm-4">
 		<table style="center">
@@ -331,7 +353,7 @@
 <hr width="70%" align="center">
 <hr width="50%" align="center">
 <br>
-<div class="container-fluid" id="mobil">
+<div class="container-fluid" id="keistimewaan">
 	<center><h1>Mengapa memilih Sakti Transport ?</h1>
 	<hr width="50%" align="center" size="5px">
   <div class="row">
@@ -350,7 +372,7 @@
    </div>
   </div>
   <br>
-  <div class="container-fluid" id="mobil">
+  <div class="container-fluid">
 	  <div class="row">
 	    <div class="col-sm-4">
 	    	<center><h3>--ROAD ASSISTANCE--</h3>
@@ -368,8 +390,10 @@
   </div>
 </div>
 
+<hr width="70%" align="center">
+<hr width="50%" align="center" style="color:black">
 
-<div class="footer">
+<div class="footer" id="informasi">
   
 </div>
 </body>
