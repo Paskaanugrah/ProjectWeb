@@ -1,5 +1,5 @@
 body {
-	background-color: powderblue;
+	background-color: Lightsteelblue;
 }
 h1 {
 	font-family: Broadway;
@@ -29,6 +29,12 @@ table {
 }
 hr {
 	color: red;
+}
+div#profil {
+	background-color: cyan;
+}
+div#keistimewaan {
+	background-color: Dodgerblue;
 }
 .namamobil {
 	font-size: 20px;
