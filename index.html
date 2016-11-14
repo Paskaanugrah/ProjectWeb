@@ -34,12 +34,10 @@
 </nav>
 
 <div class="w3-content w3-section" style="max-width:100%">
-  
-
-  <img class="mySlides w3-animate-fading" src="images/slide/gambar1.jpg" style="width:100%">
-  <img class="mySlides w3-animate-fading" src="images/slide/gambar2.jpg" style="width:100%">
-  <img class="mySlides w3-animate-fading" src="images/slide/gambar3.jpg" style="width:100%">
-  <img class="mySlides w3-animate-fading" src="images/slide/gambar4.jpg" style="width:100%">
+  <img class="mySlides" src="images/slide/gambar1.jpg" style="width:100%">
+  <img class="mySlides" src="images/slide/gambar2.jpg" style="width:100%">
+  <img class="mySlides" src="images/slide/gambar3.jpg" style="width:100%">
+  <img class="mySlides" src="images/slide/gambar4.jpg" style="width:100%">
 </div>
 
 <script>
@@ -55,7 +53,7 @@ function carousel() {
     myIndex++;
     if (myIndex > x.length) {myIndex = 1}    
     x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 4000);    
+    setTimeout(carousel, 2000); // Change image every 2 seconds
 }
 </script>
 
@@ -64,7 +62,7 @@ function carousel() {
 	<hr width="50%" align="center">
   <div class="row">
     <div class="col-sm-4">
-		
+		<img src="images/slide/slide.jpg" style="width:100%">
     </div>
     <div class="col-sm-8">
       <h1>PT. Sakti Transport</h1>

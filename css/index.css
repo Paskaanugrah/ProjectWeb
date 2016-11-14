@@ -1,5 +1,5 @@
 body {
-	
+	background-color: powderblue;
 }
 h1 {
 	font-family: Broadway;
@@ -59,4 +59,7 @@ p {
 }
 p.profil {
 	font-size: 17px;
+}
+img.id {
+	border-radius: 5px;
 }
