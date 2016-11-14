@@ -33,35 +33,40 @@
   </div>
 </nav>
 
-<div class="w3-content w3-section" style="max-width:100%">
-  <img class="mySlides" src="images/slide/gambar1.jpg" style="width:100%">
-  <img class="mySlides" src="images/slide/gambar2.jpg" style="width:100%">
-  <img class="mySlides" src="images/slide/gambar3.jpg" style="width:100%">
-  <img class="mySlides" src="images/slide/gambar4.jpg" style="width:100%">
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+	<ol class="carousel-indicators">
+		<li data-target="carousel-example-generic" data-slide-to="0" class="active"></li>
+		<li data-target="carousel-example-generic" data-slide-to="1"></li>
+		<li data-target="carousel-example-generic" data-slide-to="2"></li>
+		<li data-target="carousel-example-generic" data-slide-to="3"></li>
+	</ol>
+	
+<div class="carousel-inner">
+	<div class="item active">
+		<img src="images/slide/gambar1.jpg" alt="Slide 1">
+	</div>	
+	<div class="item">
+		<img src="images/slide/gambar2.jpg" alt="Slide 1">
+	</div>
+	<div class="item">
+		<img src="images/slide/gambar3.jpg" alt="Slide 1">
+	</div>		
+	<div class="item">
+		<img src="images/slide/gambar4.jpg" alt="Slide 1">
+	</div>	
 </div>
-
-<script>
-var myIndex = 0;
-carousel();
-
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 3000); // Change image every 3 seconds
-}
-</script>
-
+</div>
+<a href="#carousel-example-generic" class="carousel-control left" data-slide="prev" role="button">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+</a>
+<a href="#carousel-example-generic" class="carousel-control right" data-slide="next" role="button">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+</a>		
+				
 <div class="container-fluid" id="profil">
 	<center><h1>Profil Perusahaan</h1><center>
 	<hr color="purple" width=30% align="center"></hr>
 
-	<hr width="50%" align="center"></hr>
   <div class="row">
     <div class="col-sm-4">
     <br>
@@ -76,9 +81,10 @@ function carousel() {
    </div>
   </div>
 </div>
-  <br> <br>
-<hr width="50%" align="center">
-<hr width="70%" align="center">
+  
+<hr width="70%" align="center" solid>
+<hr width="50%" align="center" color="black">
+
 <div class="container-fluid" id="mobil">
   <div class="row">
     <div class="col-sm-4">
@@ -361,14 +367,17 @@ function carousel() {
 	<hr width="50%" align="center" size="5px">
   <div class="row">
     <div class="col-sm-4">
+		<img src="images/mengapa/murah.jpg" class="gambar">
     	<h3>--TARIF HEMAT--</h3>
       <p>Tarif rental mobil yang kami berikan adalah yang paling kompetitif di Jogja, harga kami pasti lebih murah, terjangkau dan siap dibandingkan dengan rate kompetitor.</p>
     </div>
     <div class="col-sm-4">
+	  <img src="images/mengapa/lengkap.jpg" class="gambar">	
       <h3>--STOK LENGKAP--</h3>
       <p>Tersedia banyak pilihan sesuai kebutuhan anda, mulai dari mobil kapasitas 4 penumpang hingga mobil kapasitas 17 penumpang, mobil angkutan barang hingga mobil mewah.</p>
     </div>
     <div class="col-sm-4">
+	  <img src="images/mengapa/terawat.jpg" class="gambar">
    	  <h3>--MOBIL TERAWAT--</h3>        
       <p>Tidak perlu ragu ketika menggunakan kendaraan kami, semua unit mobil yang kami miliki selalu mendapatkan perawatan dan inspeksi rutin harian.</p>
     </div>
@@ -377,14 +386,17 @@ function carousel() {
   <div class="container-fluid" id="keistimewaan">
 	  <div class="row">
 	    <div class="col-sm-4">
+			<img src="images/mengapa/roadasisten.jpg" class="gambar">
 	    	<center><h3>--ROAD ASSISTANCE--</h3>
 	      <p>Tim Road Assistance kami siap membantu anda apabila mobil mengalami problem teknis di perjalanan, layanan ini kami berikan gratis tanpa ada pungutan biaya.</p></center>
 	    </div>
 	    <div class="col-sm-4">
+		  <img src="images/mengapa/driver.jpg" class="gambar">
 	      <center><h3>--DRIVER PROFESIONAL--</h3>
 	      <p>Untuk menjamin kenyamanan anda saat menggunakan layanan kami, maka hanya supir yang berpengalaman dan berizin resmi yang bisa kerja di Sakti Transport.</p></center>
 	    </div>
 	    <div class="col-sm-4">
+		  <img src="images/mengapa/antarjemput.jpg" class="gambar">
 	      <center><h3>ANTAR-JEMPUT GRATIS--</h3>        
 	      <p>Rental mobil di Sakti sudah termasuk layanan antar jemput gratis dalam Kota Yogyakarta seperti antar ke Bandara, Hotel, Stasiun, Terminal dan tempat lainnya.</p></center>
 	    </div>
