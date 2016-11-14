@@ -1,5 +1,5 @@
 body {
-	background-color: Lightsteelblue;
+	background-color: skyblue;
 }
 h1 {
 	font-family: Broadway;
@@ -8,11 +8,7 @@ h1.title {
 	font-family: Bernard MT Condensed;
 	font-size: 40px;
 	padding-left: 70px;
-}
-.footer {
-	height: 300px;
-	width: 100%;
-	background-color: gray;
+	color: purple;
 }
 .logo {
 	height: 60px;
@@ -21,7 +17,7 @@ h1.title {
 }
 a:hover {
 	color: blue;
-	text-shadow: 0px 0px 2px;
+	text-shadow: 0px 2px 1px;
 }
 table {
 	color: darkgreen;
@@ -31,10 +27,12 @@ hr {
 	color: red;
 }
 div#profil {
-	background-color: cyan;
+	background-color: Lightsteelblue;
+	border-color: mediumblue;
 }
 div#keistimewaan {
 	background-color: Dodgerblue;
+	border-radius: 20px;
 }
 .namamobil {
 	font-size: 20px;
@@ -44,7 +42,7 @@ div#keistimewaan {
 	cursor: pointer;
 }
 .hargasewa:hover {
-	background-color: Forestgreen;
+	background-color: blue;
 	color: white;
 	cursor: pointer;
 }
@@ -69,13 +67,71 @@ h3 {
 }
 p {
 	font-size: 20px;
+	color: white;
 }
 p.profil {
 	font-size: 17px;
+	color: black;
 }
 img.id {
 	border-radius: 5px;
 }
 img.hubungi {
 	border-radius: 20px;
+}
+.bawah {
+	clear: left;
+	height: 60px;
+	background-color: darkgray;
+}
+.footer1 {
+	padding-top: 2px;
+	margin: 10px;
+	width: 30%;
+	float: left;
+	background-color: darkgray;
+	height: 180px;
+}
+.footer2 {
+	padding-top: 2px;
+	margin: 10px;
+	float: left;
+	width: 33%;
+	background-color: darkgray;
+	height: 180px;
+}
+.footer3 {
+	padding-top: 2px;
+	margin: 10px;
+	float: left;
+	width: 32%;
+	background-color: darkgray;
+	height: 180px;
+}
+.footer1:hover {
+	padding-top: 2px;
+	margin: 10px;
+	width: 30%;
+	float: left;
+	background-color: gray;
+	height: 180px;
+	border-radius: 15px;
+}
+.footer2:hover {
+	padding-top: 2px;
+	margin: 10px;
+	float: left;
+	width: 33%;
+	background-color: gray;
+	height: 180px;
+	border-radius: 15px;
+}
+.footer3:hover {
+	padding-top: 2px;
+	margin: 10px;
+	float: left;
+	width: 32%;
+	background-color: gray;
+	height: 180px;
+	border-radius: 15px;
 }
