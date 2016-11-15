@@ -1,5 +1,6 @@
 body {
-	background-color: skyblue;
+	background-color: Beige;
+	margin-top: 50px;
 }
 h1 {
 	font-family: Broadway;
@@ -27,7 +28,7 @@ hr {
 	color: red;
 }
 div#profil {
-	background-color: Lightsteelblue;
+	background-color: Burlywood;
 	border-color: mediumblue;
 }
 div#keistimewaan {
@@ -42,7 +43,7 @@ div#keistimewaan {
 	cursor: pointer;
 }
 .hargasewa:hover {
-	background-color: blue;
+	background-color: #99a2b3;
 	color: white;
 	cursor: pointer;
 }
@@ -139,4 +140,14 @@ img.hubungi {
 	float: center;
 	height: 100px;
 	width: 100px;
+	border-radius: 100%;
 }
+.navbar {
+	position: fixed;
+	top:0; left:0; right: 0;
+	border-radius: 0;
+	z-index: 999;
+}
+hr {
+	border-color: darkgray;
+	}
