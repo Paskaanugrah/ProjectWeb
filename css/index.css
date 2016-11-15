@@ -1,5 +1,5 @@
 body {
-	background-color: Beige;
+	background-color: #DEFB21;
 	margin-top: 50px;
 }
 h1 {
@@ -17,17 +17,17 @@ a:hover {
 }
 table {
 	color: darkgreen;
-	border-color: green;
+	border-color: #0003FC;
 }
 hr {
 	color: red;
 }
 div#profil {
-	background-color: Burlywood;
+	background-color: #F8E55E;
 	border-color: mediumblue;
 }
 div#keistimewaan {
-	background-color: Dodgerblue;
+	background-color: #E7CE10;
 	border-radius: 20px;
 }
 .namamobil {
@@ -38,8 +38,8 @@ div#keistimewaan {
 	cursor: pointer;
 }
 .hargasewa:hover {
-	background-color: #99a2b3;
-	color: white;
+	background-color: #A6BF2A;
+	color: #29050B;
 	cursor: pointer;
 }
 .namamobil:hover {
