@@ -11,11 +11,6 @@ h1.title {
 	padding-left: 70px;
 	color: purple;
 }
-.logo {
-	height: 60px;
-	width: 60px;
-	float: left;
-}
 a:hover {
 	color: blue;
 	text-shadow: 0px 2px 1px;
@@ -137,7 +132,7 @@ img.hubungi {
 	border-radius: 15px;
 }
 .gambar{
-	float: center;
+	float: left;
 	height: 100px;
 	width: 100px;
 	border-radius: 100%;
