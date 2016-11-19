@@ -2,18 +2,15 @@ body {
 	background-color: #DEFB21;
 	margin-top: 50px;
 }
-h1 {
-	font-family: Broadway;
-}
-h1.title {
-	font-family: Bernard MT Condensed;
-	font-size: 40px;
-	padding-left: 70px;
-	color: purple;
-}
 a:hover {
 	color: black;
 	transition-duration: 0.5s;
+}
+a.logo1 {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 1px;
 }
 table {
 	color: darkgreen;
@@ -57,7 +54,7 @@ div#keistimewaan {
 	transition-duration: 0.5s;
 }
 h3 {
-	font-family: lucida handwriting;
+	font-family: Franklin Gothic Book;
 }
 .profil{
 	text-align: left;
@@ -78,14 +75,12 @@ img.id {
 img.hubungi {
 	border-radius: 20px;
 }
-#bawah {
-	clear: left;
+#informasi {
+
+}
+div#mobil {
 	height: 60px;
 	background-color: darkgray;
-}
-img.kecil {
-	float: left;
-	margin-right: 5px;
 }
 .gambar{
 	float: left;
@@ -99,5 +94,5 @@ img.kecil {
 	z-index: 999;
 }
 hr {
-	border-color: darkgray;
+	border-color: #b7ca33;
 	}
