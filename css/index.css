@@ -13,7 +13,6 @@ h1.title {
 }
 a:hover {
 	color: black;
-	text-shadow: 0px 1px 1px;
 }
 table {
 	color: darkgreen;
@@ -131,11 +130,14 @@ img.hubungi {
 	height: 180px;
 	border-radius: 15px;
 }
+img.kecil {
+	float: left;
+	margin-right: 5px;
+}
 .gambar{
 	float: left;
 	height: 100px;
 	width: 100px;
-	border-radius: 100%;
 }
 .navbar {
 	position: fixed;
