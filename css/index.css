@@ -95,6 +95,15 @@ img.hubungi {
 	border-radius: 0;
 	z-index: 999;
 }
+p.info {
+	color: black;
+	font-size: 17px;
+	font-family: Franklin Gothic Book;
+}
+div.info {
+	background-color: white;
+}
+
 hr {
 	border-color: #b7ca33;
 	}
