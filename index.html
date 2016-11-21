@@ -59,7 +59,7 @@
 </a>		
 </div>
 </div>				
-<div class="container-fluid" id="profil">
+<div class="container-fluid animasi slideInDown" data-animasi-duration="1.5s" id="profil">
 	<hr width=30% align="center"></hr>
 
   <div class="row">
@@ -82,7 +82,7 @@
 
 <div class="container-fluid" id="mobil">
   <div class="row">
-    <div class="col-sm-4">
+    <div class="col-sm-4 animasi slideInLeft" data-animasi-duration="1.5s">
 		<div class="col-sm-12">
 		<table style="center">
 			<tr>
@@ -109,7 +109,7 @@
 		</table>
 		</div>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4  animasi bounceInUp" data-animasi-duration="2.5s">
 		<div class="col-sm-12">
      <table style="center">
 			<tr>
@@ -140,7 +140,7 @@
 		</table>
 		</div>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4 animasi slideInRight" data-animasi-duration="1.5s">
 		<div class="col-sm-12">
       <table style="center">
 			<tr>
@@ -178,7 +178,7 @@
 <br>
 <div class="container-fluid">
   <div class="row">
-    <div class="col-sm-4">
+    <div class="col-sm-4 animasi slideInLeft" data-animasi-duration="1.5s">
 		<div class="col-sm-12">
 		<table style="center">
 			<tr>
@@ -209,7 +209,7 @@
 		</table>
 		</div>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4 animasi bounceInUp" data-animasi-duration="2.5s">
 		<div class="col-sm-12">
      <table style="center">
 			<tr>
@@ -241,7 +241,7 @@
 		</table>
 		</div>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4 animasi slideInRight" data-animasi-duration="1.5s">
 		<div class="col-sm-12">
       <table style="center">
 			<tr>
@@ -277,7 +277,7 @@
 <br>
     <div class="container-fluid">
   <div class="row">
-    <div class="col-sm-4">
+    <div class="col-sm-4 animasi slideInLeft" data-animasi-duration="1.5s">
 	<div class="col-sm-12">
 		<table style="center">
 			<tr>
@@ -309,7 +309,7 @@
 		</table>
 		</div>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4 animasi bounceInUp" data-animasi-duration="2.5s">
 	<div class="col-sm-12">
     <table style="center">
 			<tr>
@@ -340,7 +340,7 @@
 		</table>
 		</div>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4 animasi slideInRight" data-animasi-duration="1.5s">
 	<div class="col-sm-12">
       <table style="center">
 			<tr>
@@ -472,6 +472,25 @@
 		<p><center><strong>&copy Copyright 2016 - Sakti Transport - All Right Reserved</strong></center></p>
 	</div>
   </div>
-</div>   
+</div> 
+
+<script src="js/animasi.js"></script>
+  <script>
+    animasi = new animasi(
+      {
+        animateClass: 'animated',
+        offset:       100,
+        callback:     function(box) {
+          console.log("animasi: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      }
+    );
+    animasi.init();
+    document.getElementById('moar').onclick = function() {
+      var section = document.createElement('section');
+      section.className = 'section--purple animasi fadeInDown';
+      this.parentNode.insertBefore(section, this);
+    };
+  </script>  
 </body>
 </html>
