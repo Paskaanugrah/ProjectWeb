@@ -11,21 +11,18 @@
   <link rel="icon" type="image/png" href="images/logotitle.jpg">
 </head>
 <body>
-
-<nav class="navbar navbar-default">
-	<div class="container-fluid">
-		<div class="navbar-header">
-    </div>
-    <ul class="nav navbar-nav">
+    <ul class="topnav" id=myTopnav>
       <li ><a href="#" class="logo1"><img src="images/logo.jpg" class="logo1"></a></li>
       <li><a href="#">Home</a></li>
       <li><a href="#profil">Profil</a></li>
       <li><a href="#mobil">Mobil</a></li>
       <li><a href="#keistimewaan">Keistimewaan</a></li>
 	  <li><a href="#informasi">Informasi</a></li>
-    </ul>
-  </div>
-</nav>
+	  <li class="icon">
+    <a href="javascript:void(0);" style="font-size:15px;c" onclick="myFunction()">☰</a>
+  </li>
+</ul>
+
 <div class="row">
 <div class="col-sm-12">
 	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -536,6 +533,14 @@
       section.className = 'section--purple animasi fadeInDown';
       this.parentNode.insertBefore(section, this);
     };
+	function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
   </script>  
 </body>
 </html>

@@ -3,6 +3,7 @@
 body {
 	background-color: #DEFB21;
 	margin-top: 50px;
+	margin:0;
 }
 a:hover {
 	color: black;
@@ -10,11 +11,8 @@ a:hover {
 }
 img.logo1 {
 	width: 60px;
-	height: 35px;
-	padding-bottom: 0px;
-	padding-top: 0px;
-	margin-bottom: 0px;
-	margin-top: 0px;
+	height: 25px;
+	border-radius: 1px;
 }
 table {
 	color: darkgreen;
@@ -30,7 +28,7 @@ div#profil {
 div#keistimewaan {
 	background-color: #E7CE10;
 	border-radius: 10px;
-  cursor: pointer;
+	cursor: pointer;
 }
 .namamobil {
 	font-size: 20px;
@@ -40,13 +38,13 @@ div#keistimewaan {
 	cursor: pointer;
 }
 .hargasewa:hover {
-	background-color: #A6BF2A;
+	background-color: orange;
 	color: #29050B;
 	cursor: pointer;
 	transition-duration: 0.8s;
 }
 .namamobil:hover {
-	background-color: Forestgreen;
+	background-color: orange;
 	color: white;
 	transition-duration: 0.5s;
 }
@@ -55,7 +53,7 @@ div#keistimewaan {
 	cursor: pointer;
 }
 .gambarmobil:hover {
-	border-radius: 0px;
+	border-radius: 10px;
 	transition-duration: 0.5s;
 }
 h3 {
@@ -85,18 +83,22 @@ img.hubungi {
 }
 #bawah1 {
 	height: 60px;
-	background-color: darkgray;
+	background-color: darkorange;
 }
 .gambar{
 	float: left;
 	height: 100px;
 	width: 100px;
 }
-.navbar {
+#myTopnav {
 	position: fixed;
 	top:0; left:0; right: 0;
 	border-radius: 0;
 	z-index: 999;
+	background-color: orange;
+}
+#myTopnav:hover {
+	background-color: 
 }
 p.info {
 	color: black;
@@ -476,4 +478,52 @@ animasi:first-child {
 .bounceInDown {
   -webkit-animation-name: bounceInDown;
   animation-name: bounceInDown;
+}
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  transition: 0.4s;
+  font-size: 17px;
+}
+
+ul.topnav li a:hover {background-color: darkorange;}
+
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
 }
